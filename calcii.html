@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        table{
+            margin: 60px;
+            
+        }
+        input[type= "button"] {
+            border: none;
+            background-color: black;
+            color: white;
+            font-size: xx-large;
+
+
+        }
+
+         th{
+            background-color: #2e5a5a;
+            
+        } 
+        input[type= "text"] {
+            background-color: #2e5a5a;
+            font-size: xx-large;
+
+
+        }
+        td{
+            background-color: black;
+        }
+
+
+
+        th, td{
+         padding-top: 10px;
+         padding-bottom: 20px;
+        padding-left: 30px;
+         padding-right: 40px;
+        }
+
+
+
+    </style>
+    <script>
+        function display(value){
+            document.getElementById('display1').value += value;
+          
+        }
+        function display2(){
+            document.getElementById('display1').value = eval(document.getElementById('display1').value);
+          
+        }
+
+    </script>
+
+</head>
+<body>
+    <table>
+        <th  colspan="4" ><input type="text" id="display1" style="border: none;" >
+            
+            
+        </th>
+        <tr>
+            <td >
+                <input type="button"   value="9" onclick="display(9)">
+
+            </td>
+            <td>
+                <input type="button" value="8" onclick="display(8)">
+
+            </td>
+            <td>
+                <input type="button" value="7" onclick="display(7)">
+
+            </td>
+            <td >
+                <input type="button" style="color: silver;" value=" +" onclick="display(' +')">
+            </td>
+            
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="4" onclick="display(4)">
+
+            </td>
+            <td>
+                <input type="button" value="5" onclick="display(5)">
+
+            </td>
+            <td>
+                <input type="button" value="6" onclick="display(6)">
+
+            </td>
+            <td>
+                <input type="button" value="6"  onclick="display('-')">
+                
+            </td>
+            
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="1" onclick="display(1)">
+
+            </td>
+            <td>
+                <input type="button" value="2" onclick="display(2)">
+
+            </td>
+            <td>
+                <input type="button" value="3" onclick="display(3)">
+
+            </td>
+            <td>
+                <input type="button" value="/" onclick="display('/')">
+               
+            </td>
+            
+
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="." onclick="display('.')">
+
+            </td>
+            <td>
+                <input type="button" value="0" onclick="display(0)">
+
+            </td>
+            <td>
+              <input type="button" value=" =  " onclick="display2('=')">
+
+                
+            </td>
+            <td>
+                <input type="button" value="*" onclick="display('*')">
+                
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <br>
+        <input type="button" value="1" onclick="addToDisplay('1')">
+        <input type="button" value="2" onclick="addToDisplay('2')">
+        <input type="button" value="3" onclick="addToDisplay('3')">
+        <input type="button" value="+" onclick="addToDisplay('+')">
+        <br>
+        <input type="button" value="4" onclick="addToDisplay('4')">
+        <input type="button" value="5" onclick="addToDisplay('5')">
+        <input type="button" value="6" onclick="addToDisplay('6')">
+        <input type="button" value="-" onclick="addToDisplay('-')">
+        <br>
+        <input type="button" value="7" onclick="addToDisplay('7')">
+        <input type="button" value="8" onclick="addToDisplay('8')">
+        <input type="button" value="9" onclick="addToDisplay('9')">
+        <input type="button" value="*" onclick="addToDisplay('*')">
+        <br>
+        <input type="button" value="C" onclick="clearDisplay()">
+        <input type="button" value="0" onclick="addToDisplay('0')">
+        <input type="button" value="=" onclick="calculate()">
+        <input type="button" value="/" onclick="addToDisplay('/')">
+    </div>
+
+    <script>
+        function addToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            try {
+                document.getElementById('display').value = eval(document.getElementById('display').value);
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+    </script>
+</body>
+
+</html> -->
